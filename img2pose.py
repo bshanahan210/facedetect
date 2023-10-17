@@ -120,7 +120,7 @@ class img2poseModel:
 
     def run_model(self, imgs, targets=None):
         outputs = self.fpn_model(imgs, targets)
-
+        print(outputs)
         return outputs
 
     def forward(self, imgs, targets):

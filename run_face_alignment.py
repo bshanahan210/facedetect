@@ -63,6 +63,7 @@ class img2pose:
         return img2pose_model
 
     def align(self):
+        print('TODO Daniel:', self.image_list)
         for img_path in tqdm(self.image_list):
             image_name = os.path.split(img_path)[-1]
             img = Image.open(img_path).convert("RGB")
